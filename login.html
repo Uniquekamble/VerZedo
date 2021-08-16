@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Login</title>
+<style>
+h1{
+font-family:Georgia;
+font-size:100;
+color:orange;
+text-align:center;
+padding:50px;
+}
+input[type=text] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 4px double red;
+  border-radius: 4px;
+  background-color: #ee99ee;
+  color: white;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 40%;
+}
+select{
+  width: 20%;
+  padding: 16px 20px;
+  border:4px double red ;
+  border-radius: 4px;
+  background-color: #ee99ee;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: powderblue;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body bgcolor="225577">
+<h1>WELCOME TO VERZEO</h1>
+
+
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Country</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+
+</body>
+
+<p style="text-align:center; background-color:brown;" >Copy Right @2021</h3>
+</html>
